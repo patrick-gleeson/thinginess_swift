@@ -9,11 +9,11 @@
 public class ThingRegistry {
     public static let sharedInstance = ThingRegistry()
 
-    public func objectsOfType(type :String) -> Array<Any> {
+    public func thingsOfType(type :String) -> Array<BaseThing> {
         return registry[type] ?? []
     }
 
-    func register(thing: Any, with_types types: Array<String>) {
+    func register(thing: BaseThing, with_types types: Array<String>) {
         types.forEach { ( type : String) -> () in
             if var subregistry = registry[type] {
                 subregistry.append(thing)
@@ -26,5 +26,5 @@ public class ThingRegistry {
         foo.capitalizedString
     }
 
-    private var registry = [String:Array<Any>]()
+    private var registry = [String:Array<BaseThing>]()
 }
