@@ -67,7 +67,8 @@
 		86FB708FCFE6121A82BB09E5ADD84554 /* NMBExceptionCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = A2ADFE64923497AA07A24FC59913A587 /* NMBExceptionCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A5FB42EBD07B7110FB6DF86020BFB7F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89BF7315BAB3516AF2A51041DC39C3B /* XCTest.framework */; };
 		91ED5B067FCA3CBD48E3114672941051 /* MatcherProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1FD51C6442C713FB319C1C9A49AB19 /* MatcherProtocols.swift */; };
-		95A7946D1D8C05C900537A78 /* Throwaway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A7946C1D8C05C900537A78 /* Throwaway.swift */; };
+		95A794721D8C310200537A78 /* BaseThing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A794711D8C310200537A78 /* BaseThing.swift */; };
+		95A794761D8C319E00537A78 /* ThingRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A794751D8C319E00537A78 /* ThingRegistry.swift */; };
 		96ED0CCA721955637A88FE0C9737EC56 /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85564484FA6ABBE76C0B73863EFFFCDE /* SourceLocation.swift */; };
 		97DE8D82B85B2D016E4649697824955C /* Quick-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 702D610886AA829A76EF79A25B88E1AC /* Quick-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9B5DE58927557CE87968C051D2A1C47E /* BeLogical.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29528E2ADACEB31F5B2380DA50612C1 /* BeLogical.swift */; };
@@ -194,7 +195,8 @@
 		9341EE27FCA41AD8B88193EC0C839859 /* AsyncMatcherWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncMatcherWrapper.swift; path = Sources/Nimble/Wrappers/AsyncMatcherWrapper.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		947A3412B7C6E809DE6F083951BAA0E9 /* ThinginessSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ThinginessSwift.xcconfig; sourceTree = "<group>"; };
-		95A7946C1D8C05C900537A78 /* Throwaway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Throwaway.swift; sourceTree = "<group>"; };
+		95A794711D8C310200537A78 /* BaseThing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseThing.swift; sourceTree = "<group>"; };
+		95A794751D8C319E00537A78 /* ThingRegistry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingRegistry.swift; sourceTree = "<group>"; };
 		971FBD63640E42D5B13E199D80A38E44 /* MatcherFunc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherFunc.swift; path = Sources/Nimble/Wrappers/MatcherFunc.swift; sourceTree = "<group>"; };
 		9759ABA2939945FD31FB478AE32D9E15 /* CurrentTestCaseTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CurrentTestCaseTracker.m; path = Sources/Nimble/objc/CurrentTestCaseTracker.m; sourceTree = "<group>"; };
 		9B1E511AC399B791B7476CEDEFF3789F /* ThinginessSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ThinginessSwift-dummy.m"; sourceTree = "<group>"; };
@@ -424,7 +426,8 @@
 		8E0BADC23FF3CDCE5B118C5A33BF7794 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				95A7946C1D8C05C900537A78 /* Throwaway.swift */,
+				95A794711D8C310200537A78 /* BaseThing.swift */,
+				95A794751D8C319E00537A78 /* ThingRegistry.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -766,7 +769,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B435EAC28BC863FC1DA507B2A4170EF3 /* ThinginessSwift-dummy.m in Sources */,
-				95A7946D1D8C05C900537A78 /* Throwaway.swift in Sources */,
+				95A794721D8C310200537A78 /* BaseThing.swift in Sources */,
+				95A794761D8C319E00537A78 /* ThingRegistry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
