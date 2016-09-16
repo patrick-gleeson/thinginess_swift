@@ -7,8 +7,18 @@
 //
 
 public class BaseThing {
-    public init() {
+    public init(attributes: [String: String]) {
+        self.attributes = attributes ?? [String:String]()
+
         ThingRegistry.sharedInstance.register(self, with_types: thingTypes())
+    }
+
+    public convenience init() {
+        self.init(attributes: [:])
+    }
+
+    public func attribute(attribute_name: String) -> String? {
+        return attributes[attribute_name]
     }
 
     public func thingTypes() -> Array<String> {
@@ -23,5 +33,6 @@ public class BaseThing {
             return [typeString] + thingTypesFromMirror(mirror.superclassMirror()!)
         }
     }
-}
 
+    private var attributes : [String: String]
+}

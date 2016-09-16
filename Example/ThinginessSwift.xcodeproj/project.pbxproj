@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5227A9C0A8A45219216FB10F /* Pods_ThinginessSwift_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ADD77E4ADA4BEFE4A3C6359 /* Pods_ThinginessSwift_Tests.framework */; };
 		95A794781D8C327900537A78 /* BaseThingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A794771D8C327900537A78 /* BaseThingSpec.swift */; };
+		95A7947A1D8C407C00537A78 /* ThingRegistrySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A794791D8C407C00537A78 /* ThingRegistrySpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F780860589747D52CA609A9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		95A794771D8C327900537A78 /* BaseThingSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseThingSpec.swift; sourceTree = "<group>"; };
+		95A794791D8C407C00537A78 /* ThingRegistrySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingRegistrySpec.swift; sourceTree = "<group>"; };
 		99D99F4E6D75E159FF2F4FA1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9A4ED51BBD187B2A27C8D12D /* Pods-ThinginessSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinginessSwift_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThinginessSwift_Tests/Pods-ThinginessSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DD8F636EC36BDA88A70D15C9 /* Pods-ThinginessSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinginessSwift_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThinginessSwift_Tests/Pods-ThinginessSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			children = (
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 				95A794771D8C327900537A78 /* BaseThingSpec.swift */,
+				95A794791D8C407C00537A78 /* ThingRegistrySpec.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95A7947A1D8C407C00537A78 /* ThingRegistrySpec.swift in Sources */,
 				95A794781D8C327900537A78 /* BaseThingSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

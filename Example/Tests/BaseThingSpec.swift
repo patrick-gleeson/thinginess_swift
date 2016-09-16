@@ -2,23 +2,18 @@ import Quick
 import Nimble
 import ThinginessSwift
 
-class ChildThing : BaseThing {}
-class GrandchildThing : BaseThing {}
-
 class BaseThingSpec: QuickSpec {
     override func spec() {
-        describe("init") {
+        describe("#attribute") {
 
-            it("adds to appropriate places in the ThingRegistry") {
-                let _ = ChildThing()
-                let registeredBaseThings = ThingRegistry.sharedInstance.objectsOfType("BaseThing")
-                let registeredChildThings = ThingRegistry.sharedInstance.objectsOfType("ChildThing")
-                let registeredGrandchildThings = ThingRegistry.sharedInstance.objectsOfType("GrandchildThing")
-                expect(registeredBaseThings.count).to(equal(1))
-                expect(registeredChildThings.count).to(equal(1))
-                expect(registeredGrandchildThings.count).to(equal(0))
+            it("returns attributes set on init") {
+                let thing = BaseThing(attributes: ["foo":"bar"])
+                expect(thing.attribute("foo")).to(equal("bar"))
+            }
 
-
+            it("returns nil for an unknown attribute") {
+                let thing = BaseThing(attributes: ["foo":"bar"])
+                expect(thing.attribute("boo")).to(beNil())
             }
         }
     }
