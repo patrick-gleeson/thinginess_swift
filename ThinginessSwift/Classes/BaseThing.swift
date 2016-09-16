@@ -7,6 +7,7 @@
 //
 
 public class BaseThing {
+    // Constructors
     public init(attributes: [String: String]) {
         self.attributes = attributes ?? [String:String]()
 
@@ -17,11 +18,19 @@ public class BaseThing {
         self.init(attributes: [:])
     }
 
+    // Public methods
     public func attribute(attribute_name: String) -> String? {
         return attributes[attribute_name]
     }
 
-    public func thingTypes() -> Array<String> {
+    public func update(newAttributes: [String: String]) {
+        newAttributes.forEach { (name : String, value: String) -> () in
+            attributes[name] = value
+        }
+    }
+
+    // Private methods
+    private func thingTypes() -> Array<String> {
         return thingTypesFromMirror(Mirror(reflecting: self))
     }
 
@@ -34,5 +43,6 @@ public class BaseThing {
         }
     }
 
+    // Instance variables
     private var attributes : [String: String]
 }

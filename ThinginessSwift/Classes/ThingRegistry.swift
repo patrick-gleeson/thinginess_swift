@@ -7,10 +7,11 @@
 //
 
 public class ThingRegistry {
+
     public static let sharedInstance = ThingRegistry()
 
-    public func thingsOfType(type :String) -> Array<BaseThing> {
-        return registry[type] ?? []
+    public func thingsOfType(type :String) -> ThingSet {
+        return ThingSet(things: (registry[type] ?? []))
     }
 
     func register(thing: BaseThing, with_types types: Array<String>) {
@@ -22,9 +23,7 @@ public class ThingRegistry {
                 registry[type] = subregistry
             }
         }
-        var foo = "bar"
-        foo.capitalizedString
     }
-
+    
     private var registry = [String:Array<BaseThing>]()
 }
