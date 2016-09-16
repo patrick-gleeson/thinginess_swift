@@ -26,5 +26,5 @@ public class ThingRegistry {
         foo.capitalizedString
     }
 
-    private var registry : [String:Array<Any>] = [:]
+    private var registry = [String:Array<Any>]()
 }
