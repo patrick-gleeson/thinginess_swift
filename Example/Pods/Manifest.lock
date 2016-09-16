@@ -1,0 +1,22 @@
+PODS:
+  - Nimble (3.2.0)
+  - Quick (0.9.3)
+  - ThinginessSwift (0.1.0)
+
+DEPENDENCIES:
+  - Nimble (~> 3.0)
+  - Quick (~> 0.8)
+  - ThinginessSwift (from `../`)
+
+EXTERNAL SOURCES:
+  ThinginessSwift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
+  Quick: 13a2a2b19a5d8e3ed4fd0c36ee46597fd77ebf71
+  ThinginessSwift: 0e563657544847c7aedf2ccc52c523dd8858d1bb
+
+PODFILE CHECKSUM: 60aab72bb31297526e67542d02bc6ccc438ee8b4
+
+COCOAPODS: 1.0.1
